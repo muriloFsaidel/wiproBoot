@@ -25,14 +25,12 @@ public class Aulas1 {
 		String[] nomeProduto = {"Leite","Cereal","Arroz","Atum","Feijão","Azeite","Óleo","Sabão","Sal","Açucar"};
 		int[] quantidadeProduto = {10,10,10,10,10,10,10,10,10,10};
 		Double[] precoProduto = {4.57,3.02,9.43,3.55,6.55,4.55,7.33,1.99,3.82,4.29};
-		Integer[][] carrinho = new Integer[10][10];
+		Integer[][] carrinho = new Integer[10][2];
 		
 		for(int i = 0; i < carrinho.length; i++) {
 			carrinho[i][0] = 0;
 			carrinho[i][1] = 0;
 		}
-		
-		
 		
 		 do {		
 			 
@@ -52,7 +50,7 @@ public class Aulas1 {
 			quantidadeProdutoUsuario = leia.nextInt();
 			
 			if(quantidadeProdutoUsuario > quantidadeProduto[codigoProdutoUsuario-1] ) {
-				System.out.println("\nQuantidade não disponível, favor informar uma quantidade menor que "+quantidadeProduto[codigoProdutoUsuario-1]+"\n");
+				System.out.println("\nQuantidade não disponível, favor informar uma quantidade menor ou igual que "+quantidadeProduto[codigoProdutoUsuario-1]+"\n");
 			}else {
 				
 				quantidadeProduto[codigoProdutoUsuario-1]-= quantidadeProdutoUsuario;
@@ -91,14 +89,16 @@ public class Aulas1 {
 		 System.out.println("\nITENS DO CARRINHO:");
 		 System.out.println("Nome                      Qtde. no carrinho              Preço unit.(R$)        Preço Total (R$)");
 		 
-		 int i = 0;
 		 
-		 do {		 
-			 precoTotal = (precoProduto[carrinho[i][0]-1]) * (carrinho[i][1]);		
-			 precoAbsoluto+= precoTotal;
-			 System.out.println(nomeProduto[carrinho[i][0]-1]+ "                 "+carrinho[i][1] +"                              "+precoProduto[carrinho[i][0]-1] +"                    "+precoTotal);
-			 i++;
-		 }while(carrinho[i][0]!= 0);
+		 for(int i = 0; i < carrinho.length; i++) {
+			 
+			 if (carrinho[i][0]!= 0) {
+				 precoTotal = (precoProduto[carrinho[i][0]-1]) * (carrinho[i][1]);		
+				 precoAbsoluto+= precoTotal;
+				 System.out.println(nomeProduto[carrinho[i][0]-1]+ "                 "+carrinho[i][1] +"                              "+precoProduto[carrinho[i][0]-1] +"                    "+precoTotal);
+			 }
+			 
+		 }
 		 
 		 precoComImposto = duasCasas.format((precoAbsoluto * 9) / 100 + precoAbsoluto) ;	 
 		 
@@ -110,7 +110,7 @@ public class Aulas1 {
 				 			"\n[2]À vista no cartão de crédito, recebe 15% de desconto,"+
 				            "\n[3]Em duas vezes, preço normal de etiqueta sem juros,"+
 				 			"\n[4]Em três vezes, preço normal de etiqueta mais juros de 10%\n");
-			 System.out.println("qual seria a forma de pagamento?\n");
+			 System.out.println("qual seria a forma de pagamento?");
 			 formaDePagamento = leia.nextInt();
 		 
 		 //conta
@@ -155,22 +155,32 @@ public class Aulas1 {
 			 }else {
 				 System.out.println("Digite uma opção válida");
 			 }
-		 }while(formaDePagamento > 4);
+		 }while(formaDePagamento > 4 || formaDePagamento <= 0);
 		 
 		 
-		 System.out.println("Wipro STORE\nRua dos Bôbos, n°0 - Mercadinho - LTDA\nCNPJ: 1234554321-00\n\n");
+		 System.out.println("\nWipro STORE\nRua dos Bôbos, n°0 - Mercadinho - LTDA\nCNPJ: 1234554321-00\n");
 		 System.out.println("                           Nota Fiscal                                    ");
 		 System.out.println("*************************************************************************************************");
 		 System.out.println("Nome                      Qtde. no carrinho              Preço unit.(R$)        Preço Total (R$)");
 		 
-		 int i2 = 0;
 		 
-		 do {		 
+		 
+		 for(int i = 0; i < carrinho.length; i++) {
+			 
+			 if (carrinho[i][0]!= 0) {
+				 precoTotal = (precoProduto[carrinho[i][0]-1]) * (carrinho[i][1]);		
+				 precoAbsoluto+= precoTotal;
+				 System.out.println(nomeProduto[carrinho[i][0]-1]+ "                 "+carrinho[i][1] +"                              "+precoProduto[carrinho[i][0]-1] +"                    "+precoTotal);
+			 }
+			 
+		 }
+		//int i2 = 0;
+		 /*do {		 
 			 precoTotal = (precoProduto[carrinho[i2][0]-1]) * (carrinho[i2][1]);		
 			 precoAbsoluto+= precoTotal;
 			 System.out.println(nomeProduto[carrinho[i2][0]-1]+ "                   "+carrinho[i2][1] +"                              "+precoProduto[carrinho[i2][0]-1] +"                    "+precoTotal);
 			 i2++;
-		 }while(carrinho[i2][0]!= 0);
+		 }while(carrinho[i2][0]!= 0);*/
 		 
 		 System.out.println("**************************************************************************************************\n\n");
 		
