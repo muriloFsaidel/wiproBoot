@@ -14,6 +14,8 @@ public class Aulas1 {
 	
 	public static void WiproSupermercado() {
 		
+	   System.out.println("Grupo 2: Isaque Silva\nMurilo Fernandes Saidel\nPedro Duarte\nRenan Santos Abreu de Barros\nThiago Barbosa de Araujo");
+		
 		DecimalFormat duasCasas = new DecimalFormat("###.##");
 		
 		int codigoProdutoUsuario = 0, quantidadeProdutoUsuario = 0, continuarCompra = 0, choice=0, jaExisteNoCarrinho = 1, formaDePagamento=0;	
