@@ -13,9 +13,9 @@ public class WiproStore {
 			DecimalFormat duasCasas = new DecimalFormat("###.##");
 			
 			//variáveis de entrada
-			int codigoProdutoUsuario = 0, quantidadeProdutoUsuario = 0, continuarCompra = 0;
+			int codigoProdutoUsuario = 0, quantidadeProdutoUsuario = 0, continuarCompra = 1;
 			//variáveis de entrada e controle
-			int choice = 0, jaExisteNoCarrinho = 1, formaDePagamento=0;
+			int choice = 0, jaExisteNoCarrinho = 0, formaDePagamento=0;
 			//váriaveis para cálculo
 			Double precoTotal = 0.00,precoAbsoluto = 0.00, descontoNaCompra = 0.00, precoAbsolutoComDescontoAserPago = 0.00, valorTributario = 0.00, juros = 0.00;
 			String precoComImposto = "", parcelado = "", sDescontoNaCompra = "", sPrecoAbsolutoComDescontoAserPago = "", sParceladoPrecoAbsolutoComDescontoAserPago = "", sValorTributario="";
@@ -67,12 +67,15 @@ public class WiproStore {
 					for(int i = 0; i < carrinho.length; i++) {
 						if(codigoProdutoUsuario == carrinho[i][0] ) {
 							carrinho[i][1] += quantidadeProdutoUsuario;
+							jaExisteNoCarrinho = 1;
+							break;
+						}else {
 							jaExisteNoCarrinho = 0;
 						}
 					}
 					
 					//caso não exista, encontra o primeiro espaço disponível e exibindo o produto adicionado
-					if(jaExisteNoCarrinho == 1) {
+					if(jaExisteNoCarrinho == 0) {
 						for(int i = 0; i < carrinho.length; i++) {
 							if(carrinho[i][0] == 0) {
 								carrinho[i][0] = codigoProduto[codigoProdutoUsuario-1];
@@ -86,16 +89,16 @@ public class WiproStore {
 					}
 					
 					//System.out.println("Produto: "+nomeProduto[codigoProdutoUsuario-1]+", quantidade atual:"+quantidadeProduto[codigoProdutoUsuario-1]);
-					System.out.println("Deseja continuar a sua compra? SIM = 0 , NÃO = 1");
+					System.out.println("Deseja continuar a sua compra? SIM = 1 , NÃO = 0");
 					choice = leia.nextInt();
 				}		
 				//se a escolha for não
-				if(choice == 1) {
+				if(choice == 0) {
 					//não continuar compra
-					continuarCompra = 1;	
+					continuarCompra = 0;	
 				}			
 			 
-			}while(continuarCompra == 0);
+			}while(continuarCompra == 1);
 			 
 			 //exibindo carrinho após as compras
 			 System.out.println("\nITENS DO CARRINHO:");
