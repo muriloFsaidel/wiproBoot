@@ -21,6 +21,8 @@ public class Aulas1 {
 	    //exercise3.ex3();	 
 		
 		wi.WiproSupermercado();
+		
+	   //
 	}
 
 }
