@@ -1,4 +1,4 @@
-package AtividadeComGrupoFinal.AtividadePOO;
+package Exerc1;
 
 public class ControleRemoto {
 
@@ -12,7 +12,7 @@ public class ControleRemoto {
 		if(tv.incVol() == 1) {
 			System.out.println("volume aumentado para "+tv.getVolume());
 		}else {
-			System.out.println("volume j√° est√° no m√°ximo"+tv.getVolume());
+			System.err.println("volume j· est· no m·ximo: "+tv.getVolume()+", informe outra opÁ„o.");
 		}
 	}
 	
@@ -20,7 +20,7 @@ public class ControleRemoto {
 		if(tv.decVol() == 1) {
 			System.out.println("volume diminuido para "+tv.getVolume());
 		}else {
-			System.out.println("n√£o poss√≠vel diminuir o volume");
+			System.err.println("n„o possÌvel diminuir o volume, informe outra opÁ„o.");
 		}
 	}
 	
@@ -30,8 +30,11 @@ public class ControleRemoto {
 	}
 	
 	public void diminuirCanal() {
-	   tv.decCanal();
-	   System.out.println("Novo Canal: "+tv.getCanal());
+	   if(tv.decCanal() == 1) {
+		   System.out.println("Novo Canal: "+tv.getCanal());   
+	   }else {
+		   System.err.println("canal 0 n„o existente, informe outra opÁ„o.");
+	   }
 	}
 	
 	public void trocarCanal(int canal) {

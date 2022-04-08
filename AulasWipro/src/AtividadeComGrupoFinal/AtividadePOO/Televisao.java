@@ -1,4 +1,4 @@
-package AtividadeComGrupoFinal.AtividadePOO;
+package Exerc1;
 
 public class Televisao {
 
@@ -6,7 +6,7 @@ public class Televisao {
 	private boolean ligado;
 	//controle
 	private int volume = 0;
-	private int volumeMax = 100;
+	private final int volumeMax = 100;
 	private int canal = 0;
 	
 	public Televisao(int volume, int canal) {
@@ -31,7 +31,7 @@ public class Televisao {
 	}
 
 	public int incVol() {
-		if(this.volume <= volumeMax) {
+		if(volume < volumeMax) {
 			this.volume++; 
 			return 1;
 		}else {
@@ -41,7 +41,7 @@ public class Televisao {
 	}
 	
 	public int decVol() {
-		if(this.volume > 0 ) {
+		if(volume > 0 ) {
 			volume--;
 			return 1;
 		}else {
@@ -53,11 +53,12 @@ public class Televisao {
 		this.canal++;
 	}
 	
-	public void decCanal() {
-		if(this.canal > 0) {
+	public int decCanal() {
+		if(canal > 1) {
 			canal--;
+			return 1;
 		}else {
-			System.out.println("canal não existente");
+			return 0;
 		}
 	}
 	
