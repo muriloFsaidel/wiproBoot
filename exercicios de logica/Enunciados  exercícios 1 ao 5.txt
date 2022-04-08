@@ -1,0 +1,9 @@
+01.Faça um algoritmo que mostre o passo a passo para trocar uma de lâmpada queimada.
+
+02.Faça um algoritmo que mostre o passo a passo para passear com seu animal de estimação.
+
+03.Faça um algoritmo que mostre o passo a passo para acessar um computador.
+
+04.Faça um algoritmo que mostre o passo a passo para lavar um copo
+
+05.Faça um algoritmo que mostre o passo a passo para postar uma foto em um rede social
