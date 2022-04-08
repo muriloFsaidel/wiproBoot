@@ -1,13 +1,12 @@
-package AtividadeComGrupoFinal;
+package Exerc1;
+
 
 import java.util.Scanner;
 
-import AtividadeComGrupoFinal.AtividadePOO.ControleRemoto;
-import AtividadeComGrupoFinal.AtividadePOO.Televisao;
-
 public class Main {
-	
-	public static void question1() {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
 		int choice = 0, novoCanal = 0;
 		Scanner botao = new Scanner(System.in);
@@ -16,19 +15,18 @@ public class Main {
 		
 		do {
 			
-			System.out.println("*********************************************************");
-			System.out.println("\t\tOferecido pelos integrantes do grupo 4\t\t\t\t");
-			System.out.println("\t\tTV Tabajara - Sua melhor op√ß√£o\t\t\t\t\n");
-			System.out.println("\t\tVoc√™ est√° assistindo ao canal "+remoteControl.canal()+"\t\t\t\t\n\t\tVolume: "+remoteControl.volume());
+			System.out.println("****************************************************");
+			System.out.println("\t\tTV Tabajara - Sua melhor opÁ„o\t\t\t\t\n");
+			System.out.println("\t\tVocÍ est· assistindo ao canal "+remoteControl.canal()+"\t\t\t\t\n\t\tVolume: "+remoteControl.volume());
 			System.out.println("[1] aumentar volume");
 			System.out.println("[2] diminuir volume");
-			System.out.println("[3] pr√≥ximo canal");
+			System.out.println("[3] prÛximo canal");
 			System.out.println("[4] canal anterior");
 			System.out.println("[5] trocar Canal");
-			System.out.println("[6] volume atual");
-			System.out.println("[7] desligar televis√£o");
-			System.out.println("********************************************************");
+			System.out.println("[6] desligar televis„o");
+			System.out.println("****************************************************");
 			choice = botao.nextInt();
+			
 			
 			switch(choice) {
 			
@@ -38,54 +36,40 @@ public class Main {
 				break;
 				
 			case 2:
-				System.out.println("********************************************************");
+				System.out.println("********************************************************");	
 				remoteControl.diminuirVolume();
 				break;
 				
 			case 3:
-				System.out.println("********************************************************");
+				System.out.println("********************************************************");	
 				remoteControl.aumentarCanal();			
 				break;
 				
 			case 4:	
-				System.out.println("********************************************************");
+				System.out.println("********************************************************");	
 				remoteControl.diminuirCanal();
 				break;
 				
 			case 5:
-				System.out.println("********************************************************");
+				System.out.println("********************************************************");	
 				System.out.println("informe novo canal");
 				novoCanal = botao.nextInt();
 				remoteControl.trocarCanal(novoCanal);
 				break;
 				
-			//case 6:	
-				//System.out.println(remoteControl.canal());
-				//break;
-				
 			case 6:
-				System.out.println("********************************************************");
-				System.out.println("Som volume: "+remoteControl.volume());
-				break;
-				
-			case 7:
-				System.out.println("********************************************************");
+				System.out.println("********************************************************");	
 				remoteControl.desligar();
 				break;
 				
 			default:
-				System.out.println("Informe um valor v√°lido");
+				System.out.println("********************************************************");	
+				System.err.println("Informe um valor v·lido");
+				break;	
 			}
 			
-		}while(choice != 7);
+		}while(choice != 6);
 		
 	}
 
-	
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		question1();
-	}
 }
