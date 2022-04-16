@@ -3,7 +3,7 @@ Quando começo algo não paro de pensar neste até que se conclua.
 
 ## Treinamento Gama Academy & Wipro Exercícios 
 O projeto é destinado ao treinamento fornecido por wipro & gama academy contendo todos os exercícios praticados em aula, utilizando JAVA 11.
-Exercicío sobre mercado eletrônico foi realizado em grupo(grupo 2), com os seguintes componentes:
+Exercicío sobre mercado eletrônico foi realizado em grupo(grupo 2), com os seguintes componentes:<br>
 Isaque Silva
 Murilo Fernandes Saidel
 Pedro Duarte
