@@ -5,4 +5,8 @@ O projeto é destinado ao treinamento fornecido por wipro & gama academy contend
 1. Java JDK 11 ou 8.
 2. IDE Eclipse
 
-<a href="https://github.com/muriloFsaidel/wiproBoot/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/muriloFsaidel/wiproBoot"></a>
+### Resumo dos recursos
+- [x] simulação de um controle remoto e televisão 
+- [x] média e situação de aluno
+- [x] cálculo de área dada a forma geométrica
+- [x] Bônus de funcionários dependendo do cargo
