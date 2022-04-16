@@ -8,7 +8,7 @@ A aplicação de simulação de mercado permite, simular a compra de produtos, e
 -Isaque Silva<br>
 -Murilo Fernandes Saidel<br>
 -Pedro Duarte<br>
--Renan Santos Abreu de Barros<<br>
+-Renan Santos Abreu de Barros<br>
 -Thiago Barbosa de Araujo.<br>
 
 
