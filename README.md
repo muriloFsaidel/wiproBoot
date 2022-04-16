@@ -5,12 +5,12 @@ Quando começo algo não paro de pensar neste até que se conclua.
 O projeto é destinado ao treinamento fornecido por wipro & gama academy contendo todos os exercícios praticados em aula, utilizando JAVA 11.<br>
 A aplicação de simulação de mercado permite, simular a compra de produtos, escolher formas de pagamento e emite nota fiscal em tempo de execução e foi realizado em grupo(grupo 2), com os seguintes componentes:<br>
 
--Isaque Silva
--Murilo Fernandes Saidel
--Pedro Duarte
--Renan Santos Abreu de Barros<
--Thiago Barbosa de Araujo.
-</ol>
+-Isaque Silva<br>
+-Murilo Fernandes Saidel<br>
+-Pedro Duarte<br>
+-Renan Santos Abreu de Barros<<br>
+-Thiago Barbosa de Araujo.<br>
+
 
 
 
