@@ -2,7 +2,7 @@ prato favorito: lasanha
 Quando começo algo não paro de pensar neste até que se conclua.
 
 ## Treinamento Gama Academy & Wipro Exercícios 
-O projeto é destinado ao treinamento fornecido por wipro & gama academy contendo todos os exercícios praticados em aula, utilizando JAVA 11.<br>
+O projeto é destinado ao treinamento fornecido por wipro & gama academy contendo todos os exercícios praticados em aula, abrangendo: lógica de programação, herança, polimorfismo, algoritmo e encapsulamento. Sempre utilizando JAVA 11.<br>
 A aplicação de simulação de mercado permite, simular a compra de produtos, escolher formas de pagamento e emite nota fiscal em tempo de execução e foi realizado em grupo(grupo 2), com os seguintes componentes:<br>
 
 -Isaque Silva<br>
