@@ -14,8 +14,8 @@ A aplicação de simulação de mercado permite, simular a compra de produtos, e
 O diretório individual conta o exercícios individuais praticados em aula, o exercício de Springboot foi testado com o software Postman para fazer requisições ao servidor local (máquina local), contendo o arquivo com todas as requisições possíveis (RequestsJPAClass.postman_collection) e banco de dados mysql gerenciando pelo SGBD MYSQL Workbench. 
 
 ## Programas Necessários:
--[x] Postman
--[x] Servidor MYSQL(WORKBENCH)
--[x] IDE Eclipse 
--[x] Java JDK 11 (min)
+- [x] Postman
+- [x] Servidor MYSQL(WORKBENCH)
+- [x] IDE Eclipse 
+- [x] Java JDK 11 (min)
 
