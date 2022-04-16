@@ -9,5 +9,8 @@ Pedro Duarte
 Renan Santos Abreu de Barros
 Thiago Barbosa de Araujo.
 
-
 A aplicação de simulação de mercado permite, simular a compra de produtos, escolher formas de pagamento e emite nota fiscal em tempo de execução.
+
+O diretório individual conta o exercícios individuais praticados em aula.
+
+
