@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "2efd5117-07b9-440e-83fa-77bf3ee7dbde",
+		"name": "RequestsJPAClass",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "insert user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Verson\",\r\n    \"email\": \"verson@gmail.com\",\r\n    \"senha\": 542,\r\n    \"sobrenome\": \"gfon\",\r\n    \"cartao\": \"3344 6633 2133 5544\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return specific user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/usuarios/879256ab-c0d4-4b1a-9788-3ff63e7db4fc",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"usuarios",
+								"879256ab-c0d4-4b1a-9788-3ff63e7db4fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Marcinho\",\r\n    \"email\": \"Mar@gmail.com\",\r\n    \"senha\": 1892,\r\n    \"sobrenome\": \"veos\",\r\n    \"cartao\": \"1144 6622 8833 1244\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/usuarios/879256ab-c0d4-4b1a-9788-3ff63e7db4fc",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"usuarios",
+								"879256ab-c0d4-4b1a-9788-3ff63e7db4fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/usuarios/879256ab-c0d4-4b1a-9788-3ff63e7db4fc",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"usuarios",
+								"879256ab-c0d4-4b1a-9788-3ff63e7db4fc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Moviments",
+			"item": [
+				{
+					"name": "return all moviments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/movimentacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimentacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return specific moviment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/movimentacoes/50ecd6b9-29e1-4ae1-b8c1-c45e7db0682c",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimentacoes",
+								"50ecd6b9-29e1-4ae1-b8c1-c45e7db0682c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir moviment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartao\": \"3344 6633 2133 5544\",\r\n    \"valor\": 22.60,\r\n    \"data\": \"2022-04-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/movimentacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimentacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update moviment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartao\":\"3344 6633 2133 5544\",\r\n    \"valor\": 60.40,\r\n    \"data\":\"2022-04-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/movimentacoes/50ecd6b9-29e1-4ae1-b8c1-c45e7db0682c",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimentacoes",
+								"50ecd6b9-29e1-4ae1-b8c1-c45e7db0682c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete moviment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/movimentacoes/50ecd6b9-29e1-4ae1-b8c1-c45e7db0682c",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimentacoes",
+								"50ecd6b9-29e1-4ae1-b8c1-c45e7db0682c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
